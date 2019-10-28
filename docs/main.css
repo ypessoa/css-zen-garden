@@ -43,7 +43,7 @@ body {
   color: var(--white);
   font-size: 20px;
   margin: 0;
-  padding:0;
+  padding: 0;
   /* padding: 4rem 8rem; */
   overflow-x: hidden;
 }
@@ -109,7 +109,6 @@ a:active::before {
 .design-archives a:link,
 .zen-resources a:link {
   color: var(--white);
-  opacity: 0.5;
 }
 
 abbr {
@@ -124,7 +123,7 @@ abbr {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 3;
 }
 
 .intro {
@@ -220,7 +219,7 @@ header {
   width: calc(100% - 28rem);
   margin-left: 0;
   background-color: var(--blue);
-  z-index: -2;
+  z-index: 4;
   padding: 2rem 4rem 0 4rem;
 }
 .supporting p {
@@ -238,7 +237,7 @@ header {
 }
 
 .requirements {
-  padding-bottom:0!important;
+  padding-bottom: 0 !important;
 }
 footer {
   padding-bottom: 4rem;
@@ -324,11 +323,10 @@ li a:active::before {
 
 /* page title */
 .extra1:before {
+  pointer-events:none;
   content: "Css Zen Garden";
   font-family: var(--sans);
   color: var(--blue);
-  /* border: 2px solid var(--red); */
-  /* padding: .5rem 0 .1rem 1rem; */
   position: fixed;
   border-radius: 10px;
   height: 9.5rem;
@@ -344,13 +342,8 @@ li a:active::before {
   line-height: 2.25rem;
   font-size: 1.5rem;
   top: 9.5rem;
-  transition: color 0.5s ease, background 0.5s ease;
 }
 
-.extra1:hover:before {
-  color: var(--black);
-  background: var(--red);
-}
 
 .supporting:before {
   content: "Css Zen Garden";
@@ -380,9 +373,9 @@ li a:active::before {
   width: 100vw;
   position: fixed;
   top: 0;
-  margin-top:0;
+  margin-top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   overflow: hidden;
 }
 
@@ -391,7 +384,7 @@ li a:active::before {
   content: "";
   pointer-events: none;
   position: absolute;
-  z-index: -6;
+  z-index: 5;
   width: 100%;
   height: 100%;
   background-image: url("confetti-min.png");
@@ -402,13 +395,13 @@ li a:active::before {
 
 .extra4 {
   position: fixed;
-  pointer-events:none;
-  width:100%;
+  pointer-events: none;
+  width: 100%;
   top: 10px;
   left: 0;
   height: 100vh;
-  z-index:1000;
-  margin-top:-10px;
+  z-index: 1000;
+  margin-top: -10px;
   border-top: 4px solid var(--blue);
 }
 
@@ -440,16 +433,32 @@ li a:active::before {
   }
   .sidebar {
     width: 100%;
+    color: var(--black);
+    background-color: var(--yellow);
     height: auto;
-    margin-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
+  .design-selection li:before {
+    color: var(--white);
+  }  
+
+  .sidebar h3 {
+    color: var(--black);
+  }
+  .sidebar a:link{
+    color:var(--black);
+  }
   .sidebar .wrapper div {
+    flex: 1;
+  }
+  .sidebar .wrapper div:not(:last-child) {
     margin-right: 4rem;
   }
   .sidebar .wrapper {
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
   .intro {
     width: 100%;
@@ -494,12 +503,16 @@ li a:active::before {
   }
   .sidebar .wrapper {
     display: inline-block;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .extra1:before,
   .supporting:before {
     font-size: 0.8rem;
     width: 3rem;
     line-height: 1.25rem;
+  }
+  .sidebar {
+    width: 100%;
+    background-color: var(--yellow);
   }
 }
