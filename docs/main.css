@@ -456,7 +456,7 @@ li a:active::before {
   }
 }
 
-@media (max-width: 60em) {
+@media (max-width: 50em) {
   .preamble h3,
   .supporting h3 {
     float: none;
