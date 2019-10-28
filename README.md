@@ -7,6 +7,8 @@
 - No CSS pre-processors or scripts. 
 - Must be fully responsive.
 
+![alt text](https://github.com/ypessoa/css-zen-garden/raw/master/docs/preview.gif "Gif preview")
+
 *Note: because of the no-Javascript-or-SASS restriction, the background animation had to be done using CSS animation and a big ol' PNG. Depending on your machine, your CPU/RAM might start to get a little overexcited. So, please remember to close the tab when you're finished, and thank your motherboard for doing such a great job.*
 
 [View here](https://ypessoa.github.io/css-zen-garden/)
