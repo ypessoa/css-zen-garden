@@ -345,9 +345,11 @@ li a:active::before {
   font-size: 1.5rem;
   top: 9.5rem;
   animation: slideIn 2s ease;
+  transition: color .5s ease;
 }
 
 .extra1:hover:before {
+  color: var(--yellow);
 }
 
 @keyframes slideIn {
