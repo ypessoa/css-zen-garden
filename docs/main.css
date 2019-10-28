@@ -126,6 +126,7 @@ abbr {
   margin: 0 auto;
   z-index: 3;
   animation: fadeIn 3s ease;
+  transition: padding .5s ease, margin .5s ease, width .5s ease;
 }
 
 .intro {
@@ -187,7 +188,7 @@ header {
   line-height: 1.5em;
 }
 .summary p:nth-child(2) {
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
   margin-bottom: 10rem;
 }
 .summary {
@@ -215,6 +216,7 @@ header {
 }
 
 .supporting {
+  transition: padding .5s ease, margin .5s ease, width .5s eases;
   flex: none;
   box-sizing: content-box;
   width: calc(100% - 28rem);
