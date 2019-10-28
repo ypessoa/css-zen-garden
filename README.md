@@ -1,4 +1,4 @@
-# css-zen-garden
+# css zen garden
  
 Digital Media class assignment, in which we had to use the default HTML file from csszengarden.com, and style it using vanilla CSS.
 
