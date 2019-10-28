@@ -8,7 +8,7 @@
   --black: #2b2b2b;
   --sans: "Karla", Arial, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background: var(--black);
     color: var(--white);
@@ -20,13 +20,12 @@
     background: var(--white);
     color: var(--black);
   }
-}
+} */
 
 * {
   box-sizing: content-box;
 }
 
-/* basic elements */
 ::selection {
   background: var(--blue);
 }
@@ -44,6 +43,7 @@ body {
   color: var(--white);
   font-size: 20px;
   margin: 0;
+  padding:0;
   /* padding: 4rem 8rem; */
   overflow-x: hidden;
 }
@@ -117,6 +117,7 @@ abbr {
 }
 
 /* specific divs */
+
 .page-wrapper {
   display: flex;
   align-items: flex-start;
@@ -236,6 +237,9 @@ header {
   padding-top: 0;
 }
 
+.requirements {
+  padding-bottom:0!important;
+}
 footer {
   padding-bottom: 4rem;
   font-size: 1rem;
@@ -376,6 +380,7 @@ li a:active::before {
   width: 100vw;
   position: fixed;
   top: 0;
+  margin-top:0;
   left: 0;
   z-index: 1;
   overflow: hidden;
@@ -393,6 +398,18 @@ li a:active::before {
   background-repeat: repeat;
   background-size: cover;
   animation: animateBg 20s infinite linear;
+}
+
+.extra4 {
+  position: fixed;
+  pointer-events:none;
+  width:100%;
+  top: 10px;
+  left: 0;
+  height: 100vh;
+  z-index:1000;
+  margin-top:-10px;
+  border-top: 4px solid var(--blue);
 }
 
 .extra2:before {
@@ -446,26 +463,28 @@ li a:active::before {
     position: static;
     margin-left: 2rem;
   }
-  body{
-    font-size:1em;
+  body {
+    font-size: 1em;
   }
   p {
     line-height: 1.5em;
   }
-  .summary, header h2 {
-    margin-left:2rem;
+  .summary,
+  header h2 {
+    margin-left: 2rem;
   }
-  header h2{
-    font-size:2.5rem;
+  header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.1rem;
   }
-  .summary p{
-    font-size:1.25rem;
+  .summary p {
+    font-size: 1.25rem;
   }
   .preamble p,
   p {
     margin-left: 2rem;
-    width:100%!important;
-    max-width:100%;
+    width: 100% !important;
+    max-width: 100%;
   }
   .extra1:before {
     left: 2rem;
@@ -473,13 +492,14 @@ li a:active::before {
   .supporting:before {
     margin-left: -2rem;
   }
-  .sidebar .wrapper{
-    display:inline-block;
-    margin-left:3rem;
+  .sidebar .wrapper {
+    display: inline-block;
+    margin-left: 3rem;
   }
-  .extra1:before, .supporting:before {
-    font-size:.8rem;
-    width:3rem;
-    line-height:1.25rem;
+  .extra1:before,
+  .supporting:before {
+    font-size: 0.8rem;
+    width: 3rem;
+    line-height: 1.25rem;
   }
 }
