@@ -46,6 +46,7 @@ body {
   padding: 0;
   /* padding: 4rem 8rem; */
   overflow-x: hidden;
+  
 }
 
 .supporting div:not(:last-child) {
@@ -124,6 +125,7 @@ abbr {
   justify-content: flex-end;
   margin: 0 auto;
   z-index: 3;
+  animation: fadeIn 3s ease;
 }
 
 .intro {
@@ -323,7 +325,7 @@ li a:active::before {
 
 /* page title */
 .extra1:before {
-  pointer-events:none;
+  /* pointer-events:none; */
   content: "Css Zen Garden";
   font-family: var(--sans);
   color: var(--blue);
@@ -332,16 +334,33 @@ li a:active::before {
   height: 9.5rem;
   left: 4rem;
   z-index: 1000;
-  z-index: -3;
+  z-index: 2;
   width: 4.75rem;
   word-wrap: break-word;
   text-transform: uppercase;
   font-weight: bold;
-  pointer-events: none;
+  /* pointer-events: none; */
   letter-spacing: 0.4rem;
   line-height: 2.25rem;
   font-size: 1.5rem;
   top: 9.5rem;
+  animation: slideIn 2s ease;
+}
+
+.extra1:hover:before {
+}
+
+@keyframes slideIn {
+  0% {
+    top:-9.5rem;
+  }
+  100% {
+    top: 9.5rem;
+  }
+}
+
+.extra1:hover:before {
+  color: var(--yellow);
 }
 
 
