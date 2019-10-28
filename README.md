@@ -6,6 +6,7 @@
 - No altering the HTML whatsoever. 
 - No CSS pre-processors or scripts. 
 - Must be fully responsive.
+- No found images or icons.
 
 ![alt text](https://github.com/ypessoa/css-zen-garden/raw/master/docs/preview.gif "Gif preview")
 
