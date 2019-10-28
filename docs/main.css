@@ -444,10 +444,10 @@ li a:active::before {
   .supporting h3 {
     float: none;
     position: static;
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
   .summary, header h2 {
-    margin-left:4rem;
+    margin-left:2rem;
   }
   header h2{
     font-size:2.5rem;
@@ -457,7 +457,9 @@ li a:active::before {
   }
   .preamble p,
   p {
-    margin-left: 4rem;
+    margin-left: 2rem;
+    width:100%!important;
+    max-width:100%;
   }
   .extra1:before {
     left: 2rem;
@@ -467,6 +469,11 @@ li a:active::before {
   }
   .sidebar .wrapper{
     display:inline-block;
-    margin-left:4rem;
+    margin-left:3rem;
+  }
+  .extra1:before, .supporting:before {
+    font-size:.8rem;
+    width:3rem;
+    line-height:1.25rem;
   }
 }
