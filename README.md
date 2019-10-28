@@ -2,9 +2,9 @@
 
 ![alt text](https://github.com/ypessoa/css-zen-garden/raw/master/docs/preview.gif "Gif preview")
  
-#### Digital Media class assignment, in which we had to use the default HTML file from [CSS Zen Garden](http://csszengarden.com), and style it using vanilla CSS.
+#### Assignment for my Digital Media class, in which we had to use the default HTML file from [CSS Zen Garden](http://csszengarden.com), and style it using vanilla CSS.
 
-**Directions:** 
+**Rules:** 
 - No altering the HTML whatsoever. 
 - No CSS pre-processors or scripts. 
 - Must be fully responsive.
