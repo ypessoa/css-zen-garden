@@ -215,7 +215,6 @@ header {
 .supporting {
   flex: none;
   box-sizing: content-box;
-  border-radius: 0 4px;
   width: calc(100% - 28rem);
   margin-left: 0;
   background-color: var(--blue);
@@ -257,6 +256,7 @@ footer a:visited {
   padding-right: 4rem;
   position: sticky;
   top: 8rem;
+  margin-top:-2px;
   width: 11rem;
   height: 100vh;
   font-size: 0.8rem;
