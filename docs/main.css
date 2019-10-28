@@ -446,6 +446,12 @@ li a:active::before {
     position: static;
     margin-left: 2rem;
   }
+  body{
+    font-size:1em;
+  }
+  p {
+    line-height: 1.5em;
+  }
   .summary, header h2 {
     margin-left:2rem;
   }
