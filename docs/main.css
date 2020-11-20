@@ -67,7 +67,7 @@ h3 {
   float: left;
   position: sticky;
   margin-left: 10rem;
-  top: 9.75rem;
+  top: 4.5em;
   letter-spacing: 0.05rem;
   text-transform: lowercase;
   margin-top: 0rem;
@@ -259,8 +259,7 @@ footer a:visited {
   background: var(--black);
   padding-right: 4rem;
   position: sticky;
-  top: 8rem;
-  margin-top:-2px;
+  top: 4rem;
   width: 11rem;
   height: 100vh;
   font-size: 0.8rem;
